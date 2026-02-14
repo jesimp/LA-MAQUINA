@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Untitled</title>
+    <link rel="stylesheet" href="./style.css">
+
+  </head>
+    
+  <body>
+  <div class="dashboard">
+  <header>
+    <div class="logo-area">
+      <div class="status-dot"></div>
+      <h1>SISTEMA <span>ENTREGA: </span>LA MAQUINA</h1>
+    </div>
+    <div class="info-bar">
+      <p id="last-update">Sincronizando con la nube...</p>
+      <button id="btn-guardar" class="btn-save">💾 GUARDAR CAMBIOS</button>
+    </div>
+  </header>
+
+  <div id="resumen-totales" class="summary-grid"></div>
+
+  <div class="search-container">
+    <input type="text" id="input-busqueda" placeholder="🔍 Buscar por descripción o número de orden..." onkeyup="filtrarTabla()">
+  </div>
+
+  <main class="table-container">
+    <table>
+      <thead>
+        <tr>
+          <th>DESCRIPCIÓN</th>
+          <th>ORDEN</th>
+          <th>MTV</th>
+          <th>TOTAL FINAL</th>
+          <th>E1</th>
+          <th>E2</th>
+          <th>E3</th>
+          <th>E4</th>
+          <th>E5</th>
+        </tr>
+      </thead>
+      <tbody id="table-body">
+        <tr>
+          <td colspan="9" style="text-align: center; padding: 50px; color: #64748b;">
+            Cargando base de datos...
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </main>
+
+  <footer>
+    <p>© 2026 Gestión de Entrega | Base de Datos Activa</p>
+  </footer>
+</div>
+    <script  src="./script.js"></script>
+
+  </body>
+  
+</html>
